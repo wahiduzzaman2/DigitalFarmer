@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Payment Gateway</h1>
+    <a href="../index.html" class="home-link">Home</a>
+  </header>
+  
+  <main>
+    <section class="payment-form">
+      <h2>Payment Details</h2>
+      <form id="paymentForm">
+        <div class="form-group">
+          <label for="cardHolderName">Card Holder's Name:</label>
+          <input type="text" id="cardHolderName" name="cardHolderName" required>
+        </div>
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="expiryMonth">Expiry Month:</label>
+            <input type="text" id="expiryMonth" name="expiryMonth" required>
+          </div>
+          <div class="form-group col-6">
+            <label for="expiryYear">Expiry Year:</label>
+            <input type="text" id="expiryYear" name="expiryYear" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required>
+        </div>
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+    "java.codeGeneration.insertionLocation": "beforeCursor",
+    "vim.cursorStylePerMode.insert": ""
+}

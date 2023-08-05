@@ -1,0 +1,44 @@
+{% extends 'farmers_base.html' %} {% block content %}
+<style>
+  body {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 48px; /* Adjust the font size as needed */
+    color: gray; /* White color */
+    padding-top: 20px; /* Adjust the padding-top to vertically center the text */
+  }
+
+  /* Adjust image size using fixed width and height */
+  img {
+    width: 200px; /* Set the width you desire */
+    height: auto; /* This will maintain the aspect ratio */
+  }
+
+  /* OR, adjust image size using percentage values */
+  /* img {
+    width: 50%; /* Set the percentage of the container width */
+    height: auto; /* This will maintain the aspect ratio */
+  } */
+
+</style>
+
+<h1>Welcome to the Farmers Portal</h1>
+    <ul>
+        {% for item in items %}
+        <li>
+            <strong>{{ item.name }}</strong> --{{ item.price }}৳ per KG <br>
+            <br>
+            
+            {{ item.description }}<br>
+            <img src="{{ item.picture.url }}" alt="Captured Image">
+        </li>
+        <br>
+        {% endfor %}
+
+    </ul>
+{% endblock %}

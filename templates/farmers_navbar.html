@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar Example</title>
+  <style>
+    /* CSS for the navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:azure;
+    }
+    ul.navbar li {
+      float: left;
+    }
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    ul.navbar li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <ul class="navbar">
+    <li><a class="nav-link" href="{% url 'farmers' %}" style="color: gray; text-transform: uppercase; font-weight: bold;">Farmers Portal</a></li>
+    <li><a class="nav-link" href="{% url 'contact' %}" style="color: gray; text-transform: uppercase; font-weight: bold;">Farmer's Contact</a></li>
+    <li><a class="nav-link" href="{% url 'seeds' %}" style="color: gray; text-transform: uppercase; font-weight: bold;">Seeds Collection</a></li>
+    <li><a class="nav-link" href="{% url 'loan' %}" style="color: gray; text-transform: uppercase; font-weight: bold;">Request Loan</a></li>
+    <li style="float:right"><a class="nav-link" href="{%url 'upload_vegetable'%}" style="color: gray; text-transform: uppercase; font-weight: bold;">Upload Vegetable</a></li>
+    <li style="float:right"><a class="nav-link" href="{%url 'home'%}" style="color: gray; text-transform: uppercase; font-weight: bold;">Sign Out</a></li>
+  </ul>
+</body>
+</html>

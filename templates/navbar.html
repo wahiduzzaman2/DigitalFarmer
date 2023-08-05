@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar Example</title>
+  <style>
+    /* CSS for the navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+    }
+    ul.navbar li {
+      float: left;
+    }
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    ul.navbar li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <ul class="navbar">
+    <li><a class="nav-link" href="{% url 'home' %}" style="color: #555; text-transform: uppercase; font-weight: bold;">Home</a></li>
+    <li><a class="nav-link" href="{% url 'farmers_signin' %}" style="color: #555; text-transform: uppercase; font-weight: bold;">Farmers portal</a></li>
+    <li><a class="nav-link" href="{% url 'contact' %}" style="color: #555; text-transform: uppercase; font-weight: bold;">Contact</a></li>
+    <li style="float:right"><a class="nav-link" href="{%url 'signup'%}" style="color: #555; text-transform: uppercase; font-weight: bold;">signup</a></li>
+    <li style="float:right"><a class="nav-link" href="{%url 'login'%}" style="color: #555; text-transform: uppercase; font-weight: bold;">login</a></li>
+  </ul>
+</body>
+</html>

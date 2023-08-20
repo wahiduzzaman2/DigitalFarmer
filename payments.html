@@ -1,0 +1,18 @@
+<div id="pricing">
+
+                <p id="shipping">
+                    <strong>Shipping</strong>: <span id="sshipping">{{transport_cost}}</span>
+                </p>
+
+                <p id="sub-total">
+                    <strong>Total</strong>: <span id="total">${{cart_total_amount}}</span>
+                </p>
+            </div>
+<form action="{% url 'charge' %}" method="post">
+    {% csrf_token %}
+<script src="http://checkout.stripe.com/checkout.js" class="stripe-button">
+    data-key="{{Key}}"
+    data-description="Payment gateway"
+    data-amount="500"
+    data-locale="auto"
+</script></form>

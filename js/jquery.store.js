@@ -34,7 +34,7 @@ $.noConflict();
 			this.currencyString = "৳"; // Currency symbol as textual string
 			this.paypalCurrency = "USD"; // PayPal's currency code
 			this.paypalBusinessEmail = "yourbusiness@email.com"; // Your Business PayPal's account email address
-			this.paypalURL = "https://www.sandbox.paypal.com/cgi-bin/webscr"; // The URL of the PayPal's form
+			this.paypalURL = "./Payment/payment_gateway.html"; // The URL of the PayPal's form
 			
 			// Object containing patterns for form validation
 			this.requiredFields = {
